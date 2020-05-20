@@ -4,13 +4,9 @@ Yea kernel stuff UwU.
 
 ## Conventions
 
-Keagull classes are `PascalCased`.
-Keagull namespaces usually one-word lowercase.
-Keagull functions, variables and members are `camelCased`.
-
+everything is `snake_cased`.
 Members have the `m_` prefix.
 Globals have the `g_` prefix.
-Statics have the `s_` prefix.
 
 ## Layout
 
