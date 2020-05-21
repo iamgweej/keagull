@@ -1,4 +1,7 @@
-#include "include/keagull/Utility.hpp"
+#pragma once
+
+#include "include/keagull/utility.hpp"
+#include "include/keagull/new.h"
 
 namespace keagull
 {

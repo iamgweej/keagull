@@ -1,3 +1,5 @@
+#pragma once
+
 namespace keagull
 {
 
@@ -7,7 +9,7 @@ namespace keagull
     {
         static constexpr T value = v;
         using value_type = T;
-        using type integral_constant;
+        using type = integral_constant;
         constexpr operator value_type() const noexcept { return value; }
         constexpr value_type operator()() const noexcept { return value; }
     };
@@ -85,7 +87,7 @@ namespace keagull
     };
 
     template <class T>
-    using remove_cv_t = remove_cv<T>::type;
+    using remove_cv_t = typename remove_cv<T>::type;
 
     template <class T>
     struct remove_const
@@ -99,7 +101,7 @@ namespace keagull
     };
 
     template <class T>
-    using remove_const_t = remove_const<T>::type;
+    using remove_const_t = typename remove_const<T>::type;
 
     template <class T>
     struct remove_volatile
@@ -113,7 +115,7 @@ namespace keagull
     };
 
     template <class T>
-    using remove_volatile_t = remove_volatile<T>::type;
+    using remove_volatile_t = typename remove_volatile<T>::type;
 
     // my implementation for std::is_pointer
     template <class T>

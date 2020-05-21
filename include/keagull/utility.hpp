@@ -1,3 +1,5 @@
+#pragma once
+
 #include "include\keagull\type_traits.hpp"
 
 namespace keagull

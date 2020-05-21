@@ -4,7 +4,8 @@ Yea kernel stuff UwU.
 
 ## Conventions
 
-everything is `snake_cased`.
+templatic arguments are `PascalCased`. Yea, you too `concept`s.
+everything else is `snake_cased`.
 Members have the `m_` prefix.
 Globals have the `g_` prefix.
 
