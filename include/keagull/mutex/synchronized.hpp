@@ -1,3 +1,5 @@
+#pragma once
+
 #include "include/keagull/mutex/mutex_concepts.hpp"
 #include "include/keagull/utility.hpp"
 
