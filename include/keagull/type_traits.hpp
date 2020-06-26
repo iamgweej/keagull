@@ -23,11 +23,11 @@ namespace keagull
 
     // std::is_lvalue_reference
     template <class T>
-    struct is_lvalue_reference : std::false_type
+    struct is_lvalue_reference : false_type
     {
     };
     template <class T>
-    struct is_lvalue_reference<T &> : std::true_type
+    struct is_lvalue_reference<T &> : true_type
     {
     };
 
