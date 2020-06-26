@@ -2,6 +2,6 @@
 
 void *__cdecl operator new(size_t size, void *ptr)
 {
-    UNREFERENCED_PARAMETER(size);
+    size = size;
     return ptr;
 }

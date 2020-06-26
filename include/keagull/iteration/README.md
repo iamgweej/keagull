@@ -1,12 +1,12 @@
 # Iteration
 
-In `keagull`, iteration is done using two basic constructs: the `while_predicate()` function and the `forward_iterable()` function.
+In `keagull`, iteration is done using two basic constructs: the `while_predicate()` function and the `forward_iterable()` function. This means `keagull` supports (currently) only _Internal Iteration_.
 
 A class is called an `Iterable` if it provides a `void while_predicate(UnaryPredicate P)` function.
 
 A class is called an `IterableProxy` if it provides a `auto forward_iterable(Iterable it)` function.
 
-Iteratables can be "forwarded", using the provided `operator>>` overload:
+Iteratables can be _forwarded_, using the provided `operator>>` overload:
 
 ```cpp
 template <class Iterable, class IterableProxy>
