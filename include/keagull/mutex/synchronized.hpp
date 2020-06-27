@@ -1,12 +1,11 @@
 #pragma once
 
-#include "include/keagull/mutex/mutex_concepts.hpp"
 #include "include/keagull/utility.hpp"
 
 namespace keagull
 {
 
-    template <typename T, TriviallyLockable Lock>
+    template <class T, class Lock>
     class synchronized
     {
         class acquired;
